@@ -1,0 +1,11 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: var(--spacing-lg);
+    height: 100svh;
+    width: fit-content;
+    max-width: 290px;
+}

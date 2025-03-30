@@ -1,0 +1,14 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.list__item {
+    font-size: var(--text-md);
+}
+
+.list__link {
+    color: var(--light);
+    text-transform: uppercase;
+}

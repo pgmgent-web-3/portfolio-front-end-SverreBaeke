@@ -1,3 +1,6 @@
-body {
-    font-family: sans-serif;
-}
+@import url('/src/styles/base/_reset.css');
+@import url('/src/styles/abstracts/_variables.css');
+@import url('/src/styles/abstracts/_utils.css');
+@import url('/src/styles/base/_elements.css');
+@import url('/src/styles/components/_sidebar.css');
+@import url('/src/styles/components/_list.css');
