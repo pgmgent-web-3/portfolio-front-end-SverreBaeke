@@ -32,5 +32,7 @@
 --border-radius-base: 0.5rem;
 --border-radius-md: 0.75rem;
 --border-radius-lg: 1rem;
---border-radius-xl: 1.5rem;
+--border-radius-xl: 1.75rem;
+
+--primary-font: "IBM Plex Sans", sans-serif;
 }
