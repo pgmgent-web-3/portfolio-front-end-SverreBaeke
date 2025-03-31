@@ -1,3 +1,15 @@
 .align-end {
     align-self: flex-end;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.italic {
+    font-style: italic;
+}

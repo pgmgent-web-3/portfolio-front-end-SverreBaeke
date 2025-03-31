@@ -20,43 +20,71 @@
 </head>
 
 <body>
-    <aside class="sidebar">
-        <p class="logo">sb</p>
-        <nav>
-            <ul class="list">
-                <li class="list__item"><a class="list__link" href="/index.html">Home</a></li>
-                <li class="list__item"><a class="list__link" href="/about.html">About</a></li>
-                <li class="list__item"><a class="list__link" href="/projects.html">Projects</a></li>
-                <li class="list__item"><a class="list__link" href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="flex">
+        <aside class="sidebar">
+            <p class="logo">sb</p>
+            <button data-btnType="burger" class="sidebar__btn">
+                <svg class="icon">
+                    <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
+                    <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="sidebar__content">
+                <nav>
+                    <ul class="list">
+                        <li class="list__item"><a class="list__link" href="/index.html">Home</a></li>
+                        <li class="list__item"><a class="list__link" href="/about.html">About</a></li>
+                        <li class="list__item"><a class="list__link" href="/projects.html">Projects</a></li>
+                        <li class="list__item"><a class="list__link" href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
 
-        <footer>
-            <ul class="list">
-                <li class="list__item">
-                    <a class="list__link" href="github.com/SverreBaeke" target="_blank" rel="noopener noreferrer">
-                        <i class="list__icon fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li class="list__item">
-                    <a class="list__link" href="www.linkedin.com/in/sverre-baeke-889291326/" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="list__icon fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="list__item">
-                    <a class="list__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="list__icon fa-brands fa-at"></i>
-                    </a>
-                </li>
-            </ul>
+                <footer>
+                    <ul class="list">
+                        <li class="list__item">
+                            <a class="list__link" href="https://www.github.com/SverreBaeke" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="list__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="list__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="list__icon fa-brands fa-at"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+                <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
+            </div>
+        </aside>
 
-        </footer>
-        <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
-    </aside>
+        <main class="hero flex">
+            <div class="hero__content">
+                <img class="hero__figure" src="src/images/svg/moon.svg" alt="">
+                <h1 class="hero__title upper">My name is <span class="bold">Sverre Baeke...</span></h1>
+                <p class="hero__subtitle"><strong class="italic">Student</strong> Graduate Programming</p>
+                <a class="hero__link" href="/about.html">Learn more about me
+                    <svg class="icon">
+                        <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
+                <div class="hero__contact">
+                    <a href="mailto:sverre.baeke@hotmail.com">sverre.baeke@hotmail.com</a>
+                    <a href="tel:+32473539053">+32473539053</a>
+                </div>
+            </div>
+            <img class=hero__image src="src/images/svg/hero-image.svg" alt="">
+        </main>
 
-    <script type="module" src="build/app.js"></script>
+        <script type="module" src="build/app.js"></script>
+    </div>
 </body>
 
 </html>

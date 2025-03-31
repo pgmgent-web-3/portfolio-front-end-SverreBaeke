@@ -11,6 +11,8 @@
 --md: 1.25rem;
 --lg: 2rem;
 --xl: 3.25rem;
+--xxl: 4rem;
+--xxxl: 6.25rem;
  
 --dark: var(--black);
 --light: var(--white);
@@ -20,6 +22,8 @@
 --text-md: var(--md);
 --text-lg: var(--lg);
 --text-xl: var(--xl);
+--text-xxl: var(--xxl);
+--text-xxxl: var(--xxxl);
  
 --spacing-xs: var(--xs);
 --spacing-sm: var(--sm);
