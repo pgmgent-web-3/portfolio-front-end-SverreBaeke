@@ -16,3 +16,7 @@ a {
         cursor: pointer;
     }
 }
+
+h1 {
+    font-size: var(--text-xl);
+}

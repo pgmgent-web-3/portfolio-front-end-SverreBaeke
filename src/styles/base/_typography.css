@@ -1,0 +1,17 @@
+.bold {
+    font-weight: bold;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.sub-title {
+    display: block;
+    font-size: var(--text-md);
+    text-transform: none;
+}

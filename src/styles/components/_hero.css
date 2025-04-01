@@ -66,7 +66,7 @@
 }
 @container hero (min-width: 69.625rem) {
   .hero__figure {
-    animation: move 7.5s ease 1 ;
+    animation: move 7.5s ease .5s 1 ;
   }
 }
 
