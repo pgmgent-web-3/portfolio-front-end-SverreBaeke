@@ -44,7 +44,8 @@
   z-index: -1;
   position: absolute;
   top: 0;
-  left: -100px;
+  translate: -25% -30%;
+  transform: rotate(0deg);
   width: 15.5625rem;
 }
 
@@ -58,9 +59,14 @@
   }
 }
 
-@container hero (max-width: 331px) {
+@container hero (max-width: 20.6875rem) {
   .hero__title {
     font-size: var(--text-xl);
+  }
+}
+@container hero (min-width: 69.625rem) {
+  .hero__figure {
+    animation: move 7.5s ease 1 ;
   }
 }
 
