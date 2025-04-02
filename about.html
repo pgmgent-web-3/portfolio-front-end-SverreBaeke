@@ -24,7 +24,7 @@
 <body>
     <div class="grid">
         <aside class="sidebar">
-            <p class="logo">sb</p>
+            <p class="sidebar__logo">sb</p>
             <button data-btnType="burger" class="sidebar__btn">
                 <svg class="icon">
                     <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
@@ -66,6 +66,7 @@
                 <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
             </div>
         </aside>
+
         <main class="grid__content">
             <h1 class="grid__title upper">
                 <span class="sub-title italic">
@@ -73,6 +74,7 @@
                 </span>
                 Welcome to...
             </h1>
+
             <section class="grid__item">
                 <div class="card">
                     <img class="card__image" src="src/images/svg/about-image.svg" alt="profile picture">
@@ -85,36 +87,52 @@
                     </a>
                 </div>
             </section>
+
             <section class="grid__item">
-                <div class="contact-grid contact-grid--tags">
+                <div class="info-layout">
                     <div>
-                        <a class="tag" href="telto:+32473539053"><i class="tag-icon fa-solid fa-phone"></i> +32 473 53
+                        <a class="info-tag" href="tel:+32473539053"><i class="info-tag__icon fa-solid fa-phone"></i> +32
+                            473 53
                             90 53</a>
-                        <a class="tag" href="mailto:sverre.baeke@hotmail.com"><i class="tag-icon fa-brands fa-at"></i>
+                        <a class="info-tag" href="mailto:sverre.baeke@hotmail.com"><i
+                                class="info-tag__icon fa-brands fa-at"></i>
                             sverre.baeke@hotmail.com</a>
                     </div>
                     <div>
-                        <p class="tag"><i class="tag-icon fa-solid fa-user"></i> 29 yrs</p>
-                        <p class="tag"><i class="tag-icon fa-solid fa-location-dot"></i> Belgium, Maarkedal</p>
+                        <p class="info-tag"><i class="info-tag__icon fa-solid fa-user"></i> 29 yrs</p>
+                        <p class="info-tag"><i class="info-tag__icon fa-solid fa-location-dot"></i> Belgium, Maarkedal
+                        </p>
                     </div>
                 </div>
-                <div class="contact-grid">
-                    <div class="contact-grid__item">
-                        <h2 class="contact-grid__title"><span>Aspiring</span> Web Developer</h2>
+                <div class="info-layout">
+                    <div class="info-layout__column">
+                        <h2 class="info-layout__heading"><span class="upper">Aspiring</span> Web Developer</h2>
                         <p>
                             Hi! I'm Sverre Baeke, a programming student at ArteveldeHogeschool with a passion for
                             building websites and web applications. I focus on clean design, responsive layouts, and
                             top-notch SEO to create seamless user experiences.
                         </p>
                     </div>
-                    <div class="contact-grid__item">
-                        <h2 class="contact-grid__title"><span>9 Years</span> of Professional Experience</h2>
+                    <div class="info-layout__column">
+                        <h2 class="info-layout__heading"><span class="upper">9 Years</span> of Professional Experience
+                        </h2>
                         <p>
                             With 9 years of experience in another industry, I bring reliability, teamwork, and
                             problem-solving skills to every project. I thrive in collaborative environments, love
                             tackling challenges, and always strive to find the best solutions.
                         </p>
                     </div>
+                </div>
+            </section>
+
+            <section class="grid__item">
+                <h2 class="upper">my experience</h2>
+                <div class="info-layout">
+                    <div class="info-layout__item">
+                        <p class="bold italic">-2015 - 2024</p>
+                        <p>-Belgan</p>
+                    </div>
+                    <p class="upper bold text--lg">advanced operator</p>
                 </div>
             </section>
         </main>

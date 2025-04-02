@@ -15,3 +15,7 @@
     font-size: var(--text-md);
     text-transform: none;
 }
+
+.text--lg {
+    font-size: var(--text-lg);
+}

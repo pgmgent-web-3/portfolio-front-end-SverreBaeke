@@ -9,7 +9,6 @@
 @import url('/src/styles/layout/_container.css');
 @import url('/src/styles/layout/_grid.css');
 @import url('/src/styles/components/_list.css');
-@import url('/src/styles/components/_logo.css');
 @import url('/src/styles/components/_hero.css');
 @import url('/src/styles/components/_card.css');
-@import url('/src/styles/components/_contact.css');
+@import url('/src/styles/components/_info.css');
