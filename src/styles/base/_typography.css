@@ -10,7 +10,7 @@
     font-style: italic;
 }
 
-.sub-title {
+.subtitle {
     display: block;
     font-size: var(--text-md);
     text-transform: none;

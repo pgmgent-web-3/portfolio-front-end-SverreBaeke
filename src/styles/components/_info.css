@@ -2,15 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-md);
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-md);
   border-bottom: 1px solid var(--accent);
 
-  @media (max-width: 1150px) {
+  @media (max-width: 87.875rem) {
     grid-template-columns: 1fr;
   }
 
 }
-
 
 .info-tag {
   font-weight: bold;
@@ -56,8 +55,8 @@
   }
 }
 
-.info-layout__column:not(:nth-child(3)) {
-    @media (min-width: 71.9375rem) {
+.info-layout__column {
+    @media (min-width: 87.875rem) {
         display: grid;
         grid-template-rows: subgrid;
         grid-row: 1 / 4;

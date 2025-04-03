@@ -10,5 +10,6 @@
 @import url('/src/styles/layout/_grid.css');
 @import url('/src/styles/components/_list.css');
 @import url('/src/styles/components/_hero.css');
+@import url('/src/styles/components/_profilecard.css');
 @import url('/src/styles/components/_card.css');
 @import url('/src/styles/components/_info.css');

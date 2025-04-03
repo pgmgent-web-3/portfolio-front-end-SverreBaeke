@@ -24,7 +24,7 @@
 <body>
     <div class="grid">
         <aside class="sidebar">
-            <p class="logo">sb</p>
+            <p class="sidebar__logo">sb</p>
             <button data-btnType="burger" class="sidebar__btn">
                 <svg class="icon">
                     <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
@@ -66,19 +66,94 @@
                 <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
             </div>
         </aside>
-        <main class="grid__content">
-            <h1 class="grid__title upper">
-                <span class="sub-title italic">
-                    Nice to meet you!
-                </span>
-                Welcome to...
-            </h1>
-            <section class="grid__item">
 
-            </section>
-            <section class="grid__item">
+        <h1 class="grid__title upper">
+            <span class="subtitle italic">
+                projects
+            </span>
+            My projects
+        </h1>
 
-            </section>
+        <main class="grid__content grid__content--projects">
+
+            <article class="card">
+                <div class="card__content">
+                    <p class="card__subtitle">Web-1</p>
+                    <h2 class="card__title">No Planet-B</h2>
+                    <a class="card__link" href="">
+                        <svg class="card__icon">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <img class="card__image" src="src/images/no-planet-b.webp" alt="No Planet-B homepage">
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <p class="card__subtitle">Web-1</p>
+                    <h2 class="card__title">Digital Agency</h2>
+                    <a class="card__link" href="">
+                        <svg class="card__icon">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <img class="card__image" src="src/images/digital-agency.png" alt="Digital Agency">
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <p class="card__subtitle">Pgm-1</p>
+                    <h2 class="card__title">Gamescom</h2>
+                    <a class="card__link" href="">
+                        <svg class="card__icon">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <img class="card__image" src="src/images/gamescom.png" alt="Gamescom">
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <p class="card__subtitle">Pgm-2</p>
+                    <h2 class="card__title">Recipe book</h2>
+                    <a class="card__link" href="">
+                        <svg class="card__icon">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <img class="card__image" src="src/images/recipe-book.png" alt="Recipe book">
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <p class="card__subtitle">@work-1</p>
+                    <h2 class="card__title">Project 1: STAM</h2>
+                    <a class="card__link" href="">
+                        <svg class="card__icon">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <img class="card__image" src="src/images/stam-mobile-homepage.webp" alt="Homepage STAM">
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <p class="card__subtitle">@work-1</p>
+                    <h2 class="card__title">Project 2: Best of 2024</h2>
+                    <a class="card__link" href="">
+                        <svg class="card__icon">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <img class="card__image" src="src/images/best-of-2024-homepage.png" alt="Homepage Best of 2024">
+            </article>
+
         </main>
     </div>
     <script type="module" src="build/app.js"></script>
