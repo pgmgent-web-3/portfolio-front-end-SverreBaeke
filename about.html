@@ -25,7 +25,7 @@
     <div class="grid">
         <aside class="sidebar">
             <p class="sidebar__logo">sb</p>
-            <button data-btnType="burger" class="sidebar__btn">
+            <button data-btnType="dropdown" class="sidebar__btn">
                 <svg class="icon">
                     <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
                     <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
@@ -33,32 +33,32 @@
             </button>
             <div class="sidebar__content">
                 <nav>
-                    <ul class="list">
-                        <li class="list__item"><a class="list__link" href="/index.html">Home</a></li>
-                        <li class="list__item"><a class="list__link" href="/about.html">About</a></li>
-                        <li class="list__item"><a class="list__link" href="/projects.html">Projects</a></li>
-                        <li class="list__item"><a class="list__link" href="/contact.html">Contact</a></li>
+                    <ul class="navbar">
+                        <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
                     </ul>
                 </nav>
 
                 <footer>
-                    <ul class="list">
-                        <li class="list__item">
-                            <a class="list__link" href="https://www.github.com/SverreBaeke" target="_blank"
+                    <ul class="footer">
+                        <li class="footer__item">
+                            <a class="footer__link" href="https://www.github.com/SverreBaeke" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="list__icon fa-brands fa-github"></i>
+                                <i class="footer__icon fa-brands fa-github"></i>
                             </a>
                         </li>
-                        <li class="list__item">
-                            <a class="list__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                        <li class="footer__item">
+                            <a class="footer__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
                                 target="_blank" rel="noopener noreferrer">
-                                <i class="list__icon fa-brands fa-linkedin"></i>
+                                <i class="footer__icon fa-brands fa-linkedin"></i>
                             </a>
                         </li>
-                        <li class="list__item">
-                            <a class="list__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                        <li class="footer__item">
+                            <a class="footer__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="list__icon fa-brands fa-at"></i>
+                                <i class="footer__icon fa-brands fa-at"></i>
                             </a>
                         </li>
                     </ul>
@@ -67,8 +67,8 @@
             </div>
         </aside>
 
-        <h1 class="grid__title upper">
-            <span class="subtitle italic">
+        <h1 class="grid__title text--upper">
+            <span class="subtitle text--italic">
                 Nice to meet you!
             </span>
             Welcome to...
@@ -78,10 +78,10 @@
             <section class="grid__item">
                 <div class="profile-card">
                     <img class="profile-card__image" src="src/images/svg/about-image.svg" alt="profile picture">
-                    <h2 class="profile-card__title upper">sverre baeke</h2>
-                    <p class="profile-card__subtitle"><strong class="italic">Junior </strong>Web Developer</p>
-                    <a class="profile-card__link" href="/contact.html">Contact me
-                        <svg class="icon">
+                    <h2 class="profile-card__title text--upper text--gradient">sverre baeke</h2>
+                    <p class="profile-card__subtitle"><strong class="text--italic">Junior </strong>Web Developer</p>
+                    <a class="btn" href="/contact.html">Contact me
+                        <svg class="btn__icon bg-gradient">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -89,24 +89,36 @@
             </section>
 
             <section class="grid__item">
-                <div class="info-layout">
-                    <div>
-                        <a class="info-tag" href="tel:+32473539053"><i class="info-tag__icon fa-solid fa-phone"></i> +32
-                            473 53
-                            90 53</a>
-                        <a class="info-tag" href="mailto:sverre.baeke@hotmail.com"><i
-                                class="info-tag__icon fa-brands fa-at"></i>
-                            sverre.baeke@hotmail.com</a>
-                    </div>
-                    <div>
-                        <p class="info-tag"><i class="info-tag__icon fa-solid fa-user"></i> 29 yrs</p>
-                        <p class="info-tag"><i class="info-tag__icon fa-solid fa-location-dot"></i> Belgium, Maarkedal
-                        </p>
-                    </div>
-                </div>
+                <address class="info-layout">
+                    <ul class="contact">
+                        <li>
+                            <a class="info-tag" href="tel:+32473539053">
+                                <i class="info-tag__icon fa-solid fa-phone"></i>
+                                +32 473 53 90 53
+                            </a>
+                        </li>
+                        <li>
+                            <a class="info-tag" href="mailto:sverre.baeke@hotmail.com">
+                                <i class="info-tag__icon fa-brands fa-at"></i>
+                                sverre.baeke@hotmail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="info-tag">
+                            <i class="info-tag__icon fa-solid fa-user"></i>
+                            29 yrs
+                        </li>
+                        <li class="info-tag">
+                            <i class="info-tag__icon fa-solid fa-location-dot"></i>
+                            Belgium, Maarkedal
+                        </li>
+                    </ul>
+                </address>
                 <div class="info-layout">
                     <div class="info-layout__column">
-                        <h2 class="info-layout__heading"><span class="upper">Aspiring</span> Web Developer</h2>
+                        <h2 class="info-layout__heading"><span class="text--upper text--gradient">Aspiring</span> Web
+                            Developer</h2>
                         <p>
                             Hi! I'm Sverre Baeke, a programming student at ArteveldeHogeschool with a passion for
                             building websites and web applications. I focus on clean design, responsive layouts, and
@@ -114,7 +126,8 @@
                         </p>
                     </div>
                     <div class="info-layout__column">
-                        <h2 class="info-layout__heading"><span class="upper">9 Years</span> of Professional Experience
+                        <h2 class="info-layout__heading"><span class="text--upper text--gradient">9 Years</span> of
+                            Professional Experience
                         </h2>
                         <p>
                             With 9 years of experience in another industry, I bring reliability, teamwork, and
@@ -125,14 +138,14 @@
                 </div>
             </section>
 
-            <section class="grid__item">
-                <h2 class="upper">my experience</h2>
+            <section class="grid__item bg-gradient">
+                <h2 class="text--upper">my experience</h2>
                 <div class="info-layout">
                     <div class="info-layout__item">
-                        <p class="bold italic">-2015 - 2024</p>
+                        <p class="text--bold text--italic">-2015 - 2024</p>
                         <p>-Belgan</p>
                     </div>
-                    <p class="upper bold text--lg">advanced operator</p>
+                    <p class="text--upper text--bold text--lg">advanced operator</p>
                 </div>
             </section>
         </main>

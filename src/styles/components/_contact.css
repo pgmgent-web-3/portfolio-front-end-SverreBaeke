@@ -1,0 +1,11 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+
+    & .contact__item:has(a) {
+        font-size: var(--text-lg);
+        font-style: normal;
+        font-weight: 800;
+    }
+}

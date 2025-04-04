@@ -1,12 +1,23 @@
-function addListenerToButton(btnType, action) {
-    const $button = document.querySelector(`[data-btnType=${btnType}]`);
-    $button.addEventListener("click", () => {
-        action()
-    })
-};
+const $dialog = document.querySelector("dialog");
 
-function openNav () {
-    document.body.classList.toggle("nav-open")
-};
+function addListenerToButton(btnType, action, dialog = null) {
+  const $button = document.querySelector(`[data-btnType=${btnType}]`);
+  $button.addEventListener("click", () => {
+    if (dialog) {
+      dialog[action]();
+    } else {
+      action();
+    }
+  });
+}
 
-addListenerToButton("burger", openNav)
+function openNav() {
+  document.body.classList.toggle("nav-open");
+}
+
+addListenerToButton("dropdown", openNav);
+
+if ($dialog) {
+  addListenerToButton("openDialog", "showModal", $dialog);
+  addListenerToButton("closeDialog", "close", $dialog);
+}

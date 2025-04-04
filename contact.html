@@ -25,7 +25,7 @@
     <div class="grid">
         <aside class="sidebar">
             <p class="sidebar__logo">sb</p>
-            <button data-btnType="burger" class="sidebar__btn">
+            <button data-btnType="dropdown" class="sidebar__btn">
                 <svg class="icon">
                     <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
                     <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
@@ -33,32 +33,32 @@
             </button>
             <div class="sidebar__content">
                 <nav>
-                    <ul class="list">
-                        <li class="list__item"><a class="list__link" href="/index.html">Home</a></li>
-                        <li class="list__item"><a class="list__link" href="/about.html">About</a></li>
-                        <li class="list__item"><a class="list__link" href="/projects.html">Projects</a></li>
-                        <li class="list__item"><a class="list__link" href="/contact.html">Contact</a></li>
+                    <ul class="navbar">
+                        <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
                     </ul>
                 </nav>
 
                 <footer>
-                    <ul class="list">
-                        <li class="list__item">
-                            <a class="list__link" href="https://www.github.com/SverreBaeke" target="_blank"
+                    <ul class="footer">
+                        <li class="footer__item">
+                            <a class="footer__link" href="https://www.github.com/SverreBaeke" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="list__icon fa-brands fa-github"></i>
+                                <i class="footer__icon fa-brands fa-github"></i>
                             </a>
                         </li>
-                        <li class="list__item">
-                            <a class="list__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                        <li class="footer__item">
+                            <a class="footer__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
                                 target="_blank" rel="noopener noreferrer">
-                                <i class="list__icon fa-brands fa-linkedin"></i>
+                                <i class="footer__icon fa-brands fa-linkedin"></i>
                             </a>
                         </li>
-                        <li class="list__item">
-                            <a class="list__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                        <li class="footer__item">
+                            <a class="footer__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="list__icon fa-brands fa-at"></i>
+                                <i class="footer__icon fa-brands fa-at"></i>
                             </a>
                         </li>
                     </ul>
@@ -66,15 +66,80 @@
                 <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
             </div>
         </aside>
-
+    
         <h1 class="grid__title upper">
             <span class="subtitle italic">
                 Contact
             </span>
             Reach out
         </h1>
-
         <main class="grid__content">
+            <section class="grid__item">
+                <address>
+                    <ul class="contact">
+                        <li>
+                            Schorissestraat 19, 9688 Schorisse , Belgium
+                        </li>
+                        <li class="contact__item">
+                            <a href="tel:+32473539053">
+                                +32 473 53 90 53
+                            </a>
+                        </li>
+                        <li class="contact__item">
+                            <a href="mailto:sverre.baeke@hotmail.com">
+                                sverre.baeke@hotmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+                <button class="btn" data-btnType="openDialog">
+                    Contact form
+                    <svg class="btn__icon bg-gradient">
+                        <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </section>
+            <dialog class="modal" id="form-dialog">
+                <form class="form bg-gradient text--upper">
+                    <div class="form__group">
+                        <label class="form__label">
+                            <span>First name</span>
+                            <input class="form__input" type="text" name="firstname" required>
+                        </label>
+                        <label class="form__label">
+                            <span>Last name</span>
+                            <input class="form__input" type="text" name="lastname" required>
+                        </label>
+                    </div>
+
+                    <label class="form__label">
+                        <span>E-mail</span>
+                        <input class="form__input" type="email" name="email" required>
+                    </label>
+
+                    <label class="form__label">
+                        <span>Message</span>
+                        <textarea class="form__textarea" name="message" rows="5"></textarea>
+                    </label>
+                    <div class="form__group">
+                        <button class="btn form__button" type="submit" value="Submit">
+                            Submit
+                            <svg class="btn__icon btn__icon--form bg-gradient">
+                                <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                        <button data-btnType="closeDialog" class="btn form__button" type="button" value="cancel"
+                            formmethod="dialog">
+                            Cancel
+                            <svg class="btn__icon btn__icon--form bg-gradient">
+                                <use href="src/images/svg/sprite.svg#cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </form>
+            </dialog>
+
         </main>
     </div>
     <script type="module" src="build/app.js"></script>

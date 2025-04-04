@@ -51,29 +51,23 @@
 
   & .icon {
     transform: rotate(0deg);
-    width: 60px;
-    height: 60px;
     background-image: none;
+    width: 40px;
+    height: 40px;
+    fill: var(--light);
   }
-}
-
-.burger {
-  display: block;
-}
-.cross {
-  display: none;
 }
 
 .sidebar__content {
   position: absolute;
   transform: translateX(-100%);
-  top: 5.375rem;
+  top: 4.75rem;
   left: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: calc(100svh - 5.375rem);
+  min-height: calc(100svh - 4.75rem);
   max-height: 700px;
   width: 100%;
   padding: var(--spacing-lg);
@@ -87,6 +81,13 @@
     height: 100%;
     background-color: transparent;
   }
+}
+
+.burger {
+  display: block;
+}
+.cross {
+  display: none;
 }
 
 .nav-open {

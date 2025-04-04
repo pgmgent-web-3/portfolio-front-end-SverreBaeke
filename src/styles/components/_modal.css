@@ -1,0 +1,17 @@
+.modal {
+  position: fixed;
+  margin: 0 auto;
+  top: 10svh;
+  transition: scale 0.3s ease;
+  padding: 0;
+  border: none;
+  border-radius: var(--border-radius-lg);
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  @starting-style {
+    scale: 0;
+  }
+}
