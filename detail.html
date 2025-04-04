@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Home</title>
+    <title>My Portfolio | About</title>
     <link rel="icon" type="image/png" href="src/images/favicon/" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="src/images/favicon/favicon.svg" />
     <link rel="shortcut icon" href="src/images/favicon/favicon.ico" />
@@ -15,12 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <link href="https://res.cloudinary.com/dr6lvwubh/raw/upload/v1581441981/Anicons/anicons-regular.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="build/main.css">
 
 </head>
 
 <body>
-    <div class="flex">
+    <div class="grid">
         <aside class="sidebar">
             <p class="sidebar__logo">sb</p>
             <button data-btnType="dropdown" class="sidebar__btn">
@@ -64,23 +66,18 @@
                 <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
             </div>
         </aside>
+    
+        <h1 class="grid__title">
+            <span class="subtitle">
+                Contact
+            </span>
+            Reach out
+        </h1>
+        <main class="grid__content">
 
-        <main class="hero flex">
-            <div class="hero__content">
-                <img class="hero__figure" src="src/images/svg/moon.svg" alt="">
-                <h1 class="hero__title">My name is <span class="text--bold">Sverre Baeke...</span></h1>
-                <p class="hero__subtitle"><strong class="text--italic">Junior</strong> Web Developer</p>
-                <a class="btn" href="/about.html">Learn more about me
-                    <svg class="btn__icon bg-gradient">
-                        <use href="src/images/svg/sprite.svg#arrow-right"></use>
-                    </svg>
-                </a>
-            </div>
-            <img class=hero__image src="src/images/svg/hero-image.svg" alt="">
         </main>
-
-        <script type="module" src="build/app.js"></script>
     </div>
+    <script type="module" src="build/app.js"></script>
 </body>
 
 </html>

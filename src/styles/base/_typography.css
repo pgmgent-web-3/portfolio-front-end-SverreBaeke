@@ -25,6 +25,7 @@
     display: block;
     font-size: var(--text-md);
     text-transform: none;
+    font-style: italic;
 }
 
 .text--lg {

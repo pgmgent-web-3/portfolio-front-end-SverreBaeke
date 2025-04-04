@@ -1,11 +1,22 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 
-    & .contact__item:has(a) {
-        font-size: var(--text-lg);
-        font-style: normal;
-        font-weight: 800;
+  & .contact__item:has(a) {
+    font-size: var(--text-lg);
+    font-style: normal;
+    font-weight: 800;
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
 }
+@container grid-content (max-width:26.65rem) {
+  .contact .contact__item:has(a) {
+    font-size: var(--text-md);
+  }
+}
+
+

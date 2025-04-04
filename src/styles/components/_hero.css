@@ -10,7 +10,7 @@
   padding: var(--spacing-lg);
 
   @media (min-width: 34.4375rem) {
-    min-width: 500px;
+    min-width: 25rem;
   }
 
   @media (min-width: 56.875rem) {
@@ -52,6 +52,7 @@
 .hero__title {
   font-size: var(--text-xxl);
   font-weight: 300;
+  text-transform: uppercase;
   line-height: 0.9;
 
   @media (min-width: 80.3125rem) {
