@@ -5,7 +5,7 @@
     margin: 0 auto;
     animation: fade-out linear;
     animation-timeline: view();
-    animation-range: exit -200px;
+    animation-range: exit -12.5rem;
 
     & .banner__image {
         width: 100%;

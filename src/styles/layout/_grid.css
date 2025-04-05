@@ -36,7 +36,7 @@
     min-width: 23.4375rem;
 
     @media (min-width: 66.5625rem) {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
   }
 
@@ -90,6 +90,13 @@
       grid-template-columns: minmax(18.75rem, 1fr) minmax(28.125rem, 1.5fr);
     }
   }
+
+  & .grid__image {
+    border-radius: var(--border-radius-xl);
+    mask-image: url("/src/images/svg/painty.svg ");
+    mask-position: center 80%;
+    mask-size: cover;
+  }
 }
 
 @container experience (max-width:22.6875rem) {
@@ -98,9 +105,4 @@
   }
 }
 
-.grid__image {
-  border-radius: var(--border-radius-xl);
-  mask-image: url("/src/images/svg/painty.svg ");
-  mask-position: center 80%;
-  mask-size: cover;
-}
+

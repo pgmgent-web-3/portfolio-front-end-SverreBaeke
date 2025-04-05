@@ -33,9 +33,7 @@
   }
 }
 
-.info-tag:hover .info-tag__icon {
-  color: var(--dark);
-}
+
 
 .info-layout__heading {
   margin-bottom: var(--spacing-md);
