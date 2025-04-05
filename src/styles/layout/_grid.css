@@ -46,7 +46,23 @@
       grid-template-rows: auto 1fr auto;
     }
 
-    & .grid__item--experience{
+    & .grid__item {
+      transition: 0.3s ease;
+      &:nth-child(1) {
+        @starting-style {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+      }
+      &:nth-child(2) {
+        @starting-style {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+      }
+    }
+
+    & .grid__item--experience {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;

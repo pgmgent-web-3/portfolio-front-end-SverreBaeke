@@ -66,15 +66,84 @@
                 <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
             </div>
         </aside>
-    
+
         <h1 class="grid__title">
             <span class="subtitle">
-                Contact
+                Project
             </span>
-            Reach out
+            make it happen
         </h1>
         <main class="grid__content">
+            <section class="banner">
+                <img class="banner__image" src="src/images/make-it-happen-banner.png" alt="Todo app">
+            </section>
+            <article class="article">
+                <p class="article__text">
+                    For this assignment in my Programming 3 class, I built a full-stack task management app called Make
+                    IT Happen. It’s a simple but powerful tool that lets users register, log in, and organize their
+                    tasks by category. It focuses on functionality, security, and a user-friendly interface — all the
+                    things a real-world app needs.
+                </p>
 
+                <section class="article__block">
+                    <h2 class="article__heading text--gradient">What I Learned</h2>
+                    <p class="article__text">
+                        This project was a great opportunity to tie together everything I’ve been learning about web
+                        development. I dove into backend logic using Node.js and Express, set up a SQLite database with
+                        Knex
+                        and Objection.js, and rendered views using EJS templates.
+                    </p>
+
+                    <p class="article__text">
+                        One of the biggest takeaways was implementing secure user authentication. I used bcrypt to hash
+                        passwords and managed user sessions with JWT tokens stored in cookies. It taught me how to
+                        protect
+                        user data and restrict access to private routes in a clean, scalable way.
+                    </p>
+
+                    <p class="article__text">
+                        Form validation was another key skill I picked up. With express-validator, I was able to
+                        sanitize
+                        inputs and provide helpful error messages to users — something that really improves the overall
+                        experience and makes the app feel more robust.
+                    </p>
+
+                    <p class="article__text">
+                        I also learned how to build and organize a RESTful API, giving the app a clear structure and
+                        making
+                        it easy to connect the frontend and backend. Each task and category has its own endpoint for
+                        creating, updating, or deleting data.
+                    </p>
+                </section>
+                <section class="article__block">
+                    <h2 class="article__heading text--gradient">What the App Can Do</h2>
+                    <p class="article__text">
+                        Once logged in, users can create, update, and delete their tasks, each one tied to a
+                        specific
+                        category. Categories themselves can be created and updated, with plans to add deletion soon.
+                        Every
+                        action is validated to make sure user input is clean and correct.
+                    </p>
+
+                    <p class="article__text">
+                        The app also automatically logs users out after an hour of inactivity — a small feature, but
+                        one
+                        that taught me a lot about managing sessions and time-based security.
+                    </p>
+                </section>
+
+                <section class="article__block">
+                    <h2 class="article__heading text--gradient">Future Improvements</h2>
+                    <p class="article__text">
+                        There’s still room to grow. I’d like to finish the category deletion feature, and
+                        eventually,
+                        associate tasks and categories directly with the user who created them. It would also be
+                        interesting
+                        to track progress over time — maybe with charts, filters, or even calendar integration.
+
+                    </p>
+                </section>
+            </article>
         </main>
     </div>
     <script type="module" src="build/app.js"></script>

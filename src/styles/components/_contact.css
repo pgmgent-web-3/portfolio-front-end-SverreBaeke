@@ -6,10 +6,13 @@
   & .contact__item:has(a) {
     font-size: var(--text-lg);
     font-style: normal;
-    font-weight: 800;
+    font-variation-settings:
+    "wght" 300;
+    transition: font-variation-settings .3s ease ;
 
     &:hover {
-      text-decoration: underline;
+      font-variation-settings:
+    "wght" 500
     }
   }
 }
