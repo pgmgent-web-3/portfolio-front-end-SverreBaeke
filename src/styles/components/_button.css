@@ -1,39 +1,39 @@
 .btn {
-    display: flex;
-    background-color: var(--dark);
-    border-radius: var(--border-radius-lg);
-    color: var(--light);
-    font-weight: 500;
-    width: fit-content;
-    padding: var(--spacing-sm) var(--spacing-lg);
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-    align-items: center;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  background-color: var(--dark);
+  border-radius: var(--border-radius-lg);
+  color: var(--light);
+  font-weight: 500;
+  width: fit-content;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  align-items: center;
+  border: none;
+  cursor: pointer;
 
-    &:hover .btn__icon {
-        transform: rotate(0deg);
-      }
-
-    &:hover .btn__icon--form {
-        transform: scale(1.2);
-      }
-
-      & .btn__icon {
-        padding: var(--spacing-xs);
-        border-radius: var(--border-radius-xl);
-        transition: 0.3s ease;
-        width: 3.125rem;
-        height: 3.125rem;
-        transform: rotate(-45deg);
-        fill: var(--light);
-      }
+  &:hover .btn__icon {
+    transform: rotate(0deg);
   }
-  
-  .btn__icon--form {
+
+  &:hover .btn__icon--form {
+    transform: scale(1.2);
+  }
+
+  & .btn__icon {
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-xl);
+    transition: 0.3s ease;
+    width: 3.125rem;
+    height: 3.125rem;
+    transform: rotate(-45deg);
+    fill: var(--light);
+  }
+
+  &  .btn__icon--form {
     transform: none;
   }
+}
 
 .btn--popover {
   display: inline;

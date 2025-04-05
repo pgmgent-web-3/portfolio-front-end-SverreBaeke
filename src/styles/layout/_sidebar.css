@@ -7,6 +7,8 @@
   padding: var(--spacing-sm);
   width: 100%;
   margin-bottom: var(--spacing-lg);
+  view-transition-name: sidebar;
+  z-index: 5;
 
   @media (min-width: 34.4375rem) {
     display: flex;
@@ -66,7 +68,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: calc(100svh - 4.75rem);
-    max-height: 43.75rem;
+    max-height: 37.25rem;
     width: 100%;
     padding: var(--spacing-lg);
     background-color: var(--dark);

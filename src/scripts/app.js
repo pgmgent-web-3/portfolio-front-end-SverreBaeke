@@ -1,4 +1,5 @@
 const $dialog = document.querySelector("dialog");
+import { initModeSwitch } from "./_mode.js";
 
 function addListenerToButton(btnType, action, dialog = null) {
   const $button = document.querySelector(`[data-btnType=${btnType}]`);
@@ -23,3 +24,7 @@ if ($dialog) {
   addListenerToButton("openDialog", "showModal", $dialog);
   addListenerToButton("closeDialog", "close", $dialog);
 }
+
+
+
+initModeSwitch()

@@ -25,6 +25,7 @@
 
   & .info-tag__icon {
     background-color: var(--accent);
+    color: var(--primaryIconColor);
     padding: var(--spacing-sm);
     border-radius: var(--border-radius-xl);
     width: 2.5rem;

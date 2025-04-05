@@ -25,6 +25,7 @@
     <a href="#main-content" class="skip-to-content bg-gradient">Skip to Main Content</a>
     <div class="grid">
         <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <button class="btn" id="mode-button">test</button>
             <header class="sidebar__logo">sb</header>
             <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
                 aria-label="Toggle navigation menu">
@@ -43,21 +44,27 @@
 
                 <ul class="socials">
                     <li class="socials__item">
-                        <a class="socials__link" href="https://www.github.com/SverreBaeke" target="_blank"
-                            rel="noopener noreferrer" aria-label="Visit my GitHub profile">
-                            <i class="socials__icon fa-brands fa-github" aria-hidden="true"></i>
+                        <a class="socials__link" href="https://github.com/SverreBaeke"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my Github profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#github"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="socials__item">
                         <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
                             target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
-                            <i class="socials__icon fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#linkedin"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
-                            rel="noopener noreferrer" aria-label="Send me an email">
-                            <i class="socials__icon fa-brands fa-at" aria-hidden="true"></i>
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com"
+                            target="_blank" rel="noopener noreferrer" aria-label="Send me an e-mail">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#envelope"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>

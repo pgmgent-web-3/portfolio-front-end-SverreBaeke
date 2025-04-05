@@ -19,7 +19,15 @@
 --dark: var(--black);
 --light: var(--white);
 --accent: var(--grey);
- 
+--primaryIconColor: var(--black);
+--secondaryIconColor: var(--black);
+
+body[data-mode="dark"] {
+--dark: var(--white);
+--light: var(--black);
+--secondaryIconColor: var(--white);
+
+}
 --text-sm: var(--sm);
 --text-base: var(--base);
 --text-md: var(--md);

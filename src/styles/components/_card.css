@@ -58,6 +58,7 @@
       height: 5rem;
       transition: 0.3s ease;
       transform: rotate(-45deg);
+      fill: var(--secondaryIconColor);
     }
   }
 
