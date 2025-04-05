@@ -1,0 +1,14 @@
+.skip-to-content {
+    position: absolute;
+    top: -2.5rem;
+    left: 7.5rem;
+    width: fit-content;
+    color: var(--light);
+    text-align: center;
+    z-index: 10;
+    border: none;
+}
+
+.skip-to-content:focus {
+    top: .625rem; 
+}
