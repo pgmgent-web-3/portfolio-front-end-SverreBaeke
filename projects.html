@@ -23,56 +23,55 @@
 
 <body>
     <div class="grid">
-        <aside class="sidebar">
-            <p class="sidebar__logo">sb</p>
-            <button data-btnType="dropdown" class="sidebar__btn">
-                <svg class="icon">
-                    <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
+        <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <header class="sidebar__logo">sb</header>
+            <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
+                aria-label="Toggle navigation menu">
+                <svg class="icon" aria-hidden="true">
                     <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
+                    <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
                 </svg>
             </button>
-            <div class="sidebar__content">
-                <nav>
-                    <ul class="navbar">
-                        <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="sidebar__content" id="sidebar-menu">
+                <ul class="navbar" role="navigation">
+                    <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
+                </ul>
 
-                <footer>
-                    <ul class="footer">
-                        <li class="footer__item">
-                            <a class="footer__link" href="https://www.github.com/SverreBaeke" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-at"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </footer>
-                <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.github.com/SverreBaeke" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                            <i class="socials__icon fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <i class="socials__icon fa-brands fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Send me an email">
+                            <i class="socials__icon fa-brands fa-at" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <footer class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</footer>
             </div>
-        </aside>
-
-        <h1 class="grid__title">
-            <span class="subtitle">
-                Projects
-            </span>
-            My projects
-        </h1>
+        </nav>
+        <header>
+            <h1 class="grid__title">
+                <span class="subtitle">
+                    Projects
+                </span>
+                My projects
+            </h1>
+        </header>
 
         <main class="grid__content grid__content--projects">
 
@@ -80,8 +79,8 @@
                 <div class="card__content">
                     <p class="card__subtitle">Web-1</p>
                     <h2 class="card__title">No Planet-B</h2>
-                    <a class="card__link" href="">
-                        <svg class="card__icon">
+                    <a class="card__link" href="#">
+                        <svg class="card__icon" aria-hidden="true">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -93,8 +92,8 @@
                 <div class="card__content">
                     <p class="card__subtitle">Web-1</p>
                     <h2 class="card__title">Digital Agency</h2>
-                    <a class="card__link" href="">
-                        <svg class="card__icon">
+                    <a class="card__link" href="#">
+                        <svg class="card__icon" aria-hidden="true">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -106,8 +105,8 @@
                 <div class="card__content">
                     <p class="card__subtitle">Pgm-1</p>
                     <h2 class="card__title">Gamescom</h2>
-                    <a class="card__link" href="">
-                        <svg class="card__icon">
+                    <a class="card__link" href="#">
+                        <svg class="card__icon" aria-hidden="true">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -119,8 +118,8 @@
                 <div class="card__content">
                     <p class="card__subtitle">Pgm-2</p>
                     <h2 class="card__title">Recipe book</h2>
-                    <a class="card__link" href="">
-                        <svg class="card__icon">
+                    <a class="card__link" href="#">
+                        <svg class="card__icon" aria-hidden="true">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -133,7 +132,7 @@
                     <p class="card__subtitle">Pgm-3</p>
                     <h2 class="card__title">Make IT Happen</h2>
                     <a class="card__link" href="/detail.html">
-                        <svg class="card__icon">
+                        <svg class="card__icon" aria-hidden="true">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -145,8 +144,8 @@
                 <div class="card__content">
                     <p class="card__subtitle">@work-1</p>
                     <h2 class="card__title">Project 1: STAM</h2>
-                    <a class="card__link" href="">
-                        <svg class="card__icon">
+                    <a class="card__link" href="#">
+                        <svg class="card__icon" aria-hidden="true">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -158,8 +157,8 @@
                 <div class="card__content">
                     <p class="card__subtitle">@work-1</p>
                     <h2 class="card__title">Project 2: Best of 2024</h2>
-                    <a class="card__link" href="">
-                        <svg class="card__icon">
+                    <a class="card__link" href="#">
+                        <svg class="card__icon" aria-hidden="true">
                             <use href="src/images/svg/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>

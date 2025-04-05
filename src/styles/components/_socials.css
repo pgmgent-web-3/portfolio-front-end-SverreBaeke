@@ -1,16 +1,16 @@
-.footer {
+.socials {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
    
 }
 
-.footer__link {
+.socials__link {
     color: var(--light);
     text-transform: uppercase;
 }
 
-.footer__icon {
+.socials__icon {
     background-color: var(--light);
     color: var(--dark);
     font-size: 1.5rem;

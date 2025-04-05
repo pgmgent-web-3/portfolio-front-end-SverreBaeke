@@ -22,57 +22,56 @@
 
 <body>
     <div class="grid">
-        <aside class="sidebar">
-            <p class="sidebar__logo">sb</p>
-            <button data-btnType="dropdown" class="sidebar__btn">
-                <svg class="icon">
+        <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <header class="sidebar__logo">sb</header>
+            <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
+                aria-label="Toggle navigation menu">
+                <svg class="icon" aria-hidden="true">
                     <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
                     <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
                 </svg>
             </button>
-            <div class="sidebar__content">
-                <nav>
-                    <ul class="navbar">
-                        <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="sidebar__content" id="sidebar-menu">
+                <ul class="navbar" role="navigation">
+                    <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
+                </ul>
 
-                <footer>
-                    <ul class="footer">
-                        <li class="footer__item">
-                            <a class="footer__link" href="https://www.github.com/SverreBaeke" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-at"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </footer>
-                <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.github.com/SverreBaeke" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                            <i class="socials__icon fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <i class="socials__icon fa-brands fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Send me an email">
+                            <i class="socials__icon fa-brands fa-at" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <footer class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</footer>
             </div>
-        </aside>
-
-        <h1 class="grid__title">
-            <span class="subtitle">
-                Contact
-            </span>
-            Reach out
-        </h1>
-        <main class="grid__content">
+        </nav>
+        <header>
+            <h1 class="grid__title">
+                <span class="subtitle">
+                    Contact
+                </span>
+                Reach out
+            </h1>
+        </header>
+        <main class="grid__content grid__content--contact">
             <section class="grid__item">
                 <address>
                     <ul class="contact">
@@ -91,15 +90,20 @@
                         </li>
                     </ul>
                 </address>
-                <button class="btn" data-btnType="openDialog">
+                <button class="btn" data-btnType="openDialog" aria-haspopup="dialog" aria-controls="form-dialog">
                     Contact form
-                    <svg class="btn__icon bg-gradient">
+                    <svg class="btn__icon bg-gradient" aria-hidden="true">
                         <use href="src/images/svg/sprite.svg#arrow-right"></use>
                     </svg>
                 </button>
             </section>
-            <dialog class="modal" id="form-dialog">
+
+            <section class="grid__item">
+                <img class="grid__image" src="src/images/laptop.jpg" alt="Laptop">
+            </section>
+            <dialog class="modal" id="form-dialog" aria-labelledby="dialog-title">
                 <form class="form bg-gradient">
+                    <h2 id="dialog-title" class="visually-hidden">Contact Form</h2>
                     <div class="form__group">
                         <label class="form__label form__label--name">
                             <span>First name</span>
@@ -123,14 +127,14 @@
                     <div class="form__group">
                         <button class="btn form__button" type="submit" value="Submit">
                             Submit
-                            <svg class="btn__icon btn__icon--form bg-gradient">
+                            <svg class="btn__icon btn__icon--form bg-gradient" aria-hidden="true">
                                 <use href="src/images/svg/sprite.svg#arrow-right"></use>
                             </svg>
                         </button>
                         <button data-btnType="closeDialog" class="btn form__button" type="button" value="cancel"
-                            formmethod="dialog">
+                            formmethod="dialog" aria-label="Close dialog">
                             Cancel
-                            <svg class="btn__icon btn__icon--form bg-gradient">
+                            <svg class="btn__icon btn__icon--form bg-gradient" aria-hidden="true">
                                 <use href="src/images/svg/sprite.svg#cross"></use>
                             </svg>
                         </button>
@@ -138,7 +142,6 @@
 
                 </form>
             </dialog>
-
         </main>
     </div>
     <script type="module" src="build/app.js"></script>

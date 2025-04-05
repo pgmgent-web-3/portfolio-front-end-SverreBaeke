@@ -5,13 +5,12 @@
   container-type: inline-size;
 
   & .article__block {
-    
-    animation: slide-in linear;
-    animation-timeline: view();
-    animation-range:entry ;
- 
+    @media (min-width: 77.1875rem) {
+      animation: slide-in linear;
+      animation-timeline: view();
+      animation-range: entry;
+    }
   }
-
 
   & .article__text {
     margin: var(--spacing-md) 0;

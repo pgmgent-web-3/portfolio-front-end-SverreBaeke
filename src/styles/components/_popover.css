@@ -1,0 +1,36 @@
+.popover {
+  max-width: 25rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  padding-bottom: var(--spacing-sm);
+  text-align: center;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+
+  & .popover__caption {
+    padding: var(--spacing-sm);
+    font-style:italic;
+  }
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  }
+
+[popovertarget="pop-express"] {
+    anchor-name: --pop-express;
+}
+
+.popover--express {
+    top: anchor(--pop-express bottom);
+}
+
+[popovertarget="pop-task"] {
+    anchor-name: --pop-task;
+}
+
+.popover--task {
+    top: anchor(--pop-task bottom);
+}

@@ -10,6 +10,7 @@
     margin-top: var(--spacing-lg);
     align-items: center;
     border: none;
+    cursor: pointer;
 
     &:hover .btn__icon {
         transform: rotate(0deg);
@@ -35,3 +36,9 @@
   .btn__icon--form {
     transform: none;
   }
+
+.btn--popover {
+  display: inline;
+  padding: var(--spacing-xxs);
+  margin: 0;
+}

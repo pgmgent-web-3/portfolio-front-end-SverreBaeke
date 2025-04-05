@@ -6,6 +6,8 @@ function addListenerToButton(btnType, action, dialog = null) {
     if (dialog) {
       dialog[action]();
     } else {
+      const isExpanded = $button.getAttribute('aria-expanded') === 'true'; 
+      $button.setAttribute("aria-expanded", !isExpanded);
       action();
     }
   });

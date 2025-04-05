@@ -23,56 +23,56 @@
 
 <body>
     <div class="grid">
-        <aside class="sidebar">
-            <p class="sidebar__logo">sb</p>
-            <button data-btnType="dropdown" class="sidebar__btn">
-                <svg class="icon">
+        <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <header class="sidebar__logo">sb</header>
+            <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
+                aria-label="Toggle navigation menu">
+                <svg class="icon" aria-hidden="true">
                     <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
                     <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
                 </svg>
             </button>
-            <div class="sidebar__content">
-                <nav>
-                    <ul class="navbar">
-                        <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="sidebar__content" id="sidebar-menu">
+                <ul class="navbar" role="navigation">
+                    <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
+                </ul>
 
-                <footer>
-                    <ul class="footer">
-                        <li class="footer__item">
-                            <a class="footer__link" href="https://www.github.com/SverreBaeke" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="footer__icon fa-brands fa-at"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </footer>
-                <p class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</p>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.github.com/SverreBaeke" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                            <i class="socials__icon fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <i class="socials__icon fa-brands fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Send me an email">
+                            <i class="socials__icon fa-brands fa-at" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <footer class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</footer>
             </div>
-        </aside>
+        </nav>
 
-        <h1 class="grid__title">
-            <span class="subtitle">
-                Project
-            </span>
-            make it happen
-        </h1>
+        <header>
+            <h1 class="grid__title">
+                <span class="subtitle">
+                    Project
+                </span>
+                make it happen
+            </h1>
+        </header>
         <main class="grid__content">
             <section class="banner">
                 <img class="banner__image" src="src/images/make-it-happen-banner.png" alt="Todo app">
@@ -89,10 +89,20 @@
                     <h2 class="article__heading text--gradient">What I Learned</h2>
                     <p class="article__text">
                         This project was a great opportunity to tie together everything I’ve been learning about web
-                        development. I dove into backend logic using Node.js and Express, set up a SQLite database with
-                        Knex
+                        development. I dove into backend logic using Node.js and
+                        <button class="btn btn--popover" popovertarget="pop-express" aria-label="Open Express popover">Express</button>,
+                        set up a SQLite database with Knex
                         and Objection.js, and rendered views using EJS templates.
                     </p>
+                    <div class="popover popover--express" popover id="pop-express" role="dialog">
+                        <figure>
+                            <img src="src/images/express.png" alt="express code">
+                            <figcaption class="popover__caption">Basic code for starting an express application.
+                            </figcaption>
+                        </figure>
+                        <button class="btn btn--popover" popovertargetaction="hide"
+                            popovertarget="pop-express" aria-label="Close Express popover">Close</button>
+                    </div>
 
                     <p class="article__text">
                         One of the biggest takeaways was implementing secure user authentication. I used bcrypt to hash
@@ -118,12 +128,22 @@
                 <section class="article__block">
                     <h2 class="article__heading text--gradient">What the App Can Do</h2>
                     <p class="article__text">
-                        Once logged in, users can create, update, and delete their tasks, each one tied to a
+                        Once logged in, users can create, update, and delete their
+                        <button class="btn btn--popover" popovertarget="pop-task" aria-label="Open task popover">tasks</button>, each one tied to a
                         specific
                         category. Categories themselves can be created and updated, with plans to add deletion soon.
                         Every
                         action is validated to make sure user input is clean and correct.
                     </p>
+                    <div class="popover popover--task" popover id="pop-task" role="dialog">
+                        <figure>
+                            <img src="src/images/task.png" alt="task element">
+                            <figcaption class="popover__caption">Task element for completing, updating and deleting.
+                            </figcaption>
+                        </figure>
+                        <button class="btn btn--popover" popovertargetaction="hide"
+                            popovertarget="pop-task" aria-label="Close task popover">Close</button>
+                    </div>
 
                     <p class="article__text">
                         The app also automatically logs users out after an hour of inactivity — a small feature, but

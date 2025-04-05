@@ -31,6 +31,9 @@
 
 .hero__image {
   height: fit-content;
+  mask-image: url('/src/images/svg/circle.svg');
+  mask-size: cover;
+  mask-position: 50% 0%;
 }
 
 .hero__content {

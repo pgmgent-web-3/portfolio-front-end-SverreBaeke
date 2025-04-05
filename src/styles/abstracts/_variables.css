@@ -6,6 +6,7 @@
 --purple: #B86ADF;
 --grey: #ebebeb;
  
+--xxs: .3125rem;
 --xs: 0.625rem;
 --sm: 0.75rem;
 --base: 1rem;
@@ -27,6 +28,7 @@
 --text-xxl: var(--xxl);
 --text-xxxl: var(--xxxl);
  
+--spacing-xxs: var(--xxs);
 --spacing-xs: var(--xs);
 --spacing-sm: var(--sm);
 --spacing-base: var(--base);
