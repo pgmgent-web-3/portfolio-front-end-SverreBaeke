@@ -93,7 +93,7 @@
 
   & .grid__image {
     border-radius: var(--border-radius-xl);
-    mask-image: url("/src/images/svg/painty.svg ");
+    mask-image: url("/src/images/paint.webp");
     mask-position: center 80%;
     mask-size: cover;
   }
