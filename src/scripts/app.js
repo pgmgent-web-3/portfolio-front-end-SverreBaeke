@@ -18,13 +18,10 @@ function openNav() {
   document.body.classList.toggle("nav-open");
 }
 
-addListenerToButton("dropdown", openNav);
 
 if ($dialog) {
   addListenerToButton("openDialog", "showModal", $dialog);
   addListenerToButton("closeDialog", "close", $dialog);
 }
-
-
-
+addListenerToButton("dropdown", openNav);
 initModeSwitch()
