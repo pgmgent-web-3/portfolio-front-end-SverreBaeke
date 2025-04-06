@@ -48,6 +48,8 @@ npm install
 # Start the development server and watch for changes
 npm run watch
 
+```
+---
 ## 🙏 Thanks for Visiting!
 
 Thanks for checking out my project!  
