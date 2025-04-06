@@ -2,7 +2,7 @@
   grid-row: span 2;
   display: flex;
   justify-content: space-between;
-  background-color: var(--dark);
+  background-color: var(--primaryBgColor);
   color: var(--light);
   padding: var(--spacing-sm);
   width: 100%;

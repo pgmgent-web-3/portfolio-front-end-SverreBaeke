@@ -21,11 +21,13 @@
 --accent: var(--grey);
 --primaryIconColor: var(--black);
 --secondaryIconColor: var(--black);
+--primaryBgColor: var(--black);
 
 body[data-mode="dark"] {
 --dark: var(--white);
 --light: var(--black);
 --secondaryIconColor: var(--white);
+--primaryBgColor: #785135;
 
 }
 --text-sm: var(--sm);

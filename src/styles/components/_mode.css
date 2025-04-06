@@ -1,0 +1,24 @@
+.mode-icon {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.sun {
+    display: none;
+  }
+  
+  .moon {
+    display: block;
+    fill:rgb(237, 237, 193)
+  }
+  
+  body[data-mode="dark"] {
+    .sun {
+      display: block;
+      fill: var(--orange);
+    }
+  
+    .moon {
+      display: none;
+    }
+  }

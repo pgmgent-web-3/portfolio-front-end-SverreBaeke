@@ -1,3 +1,4 @@
+@media (min-width: 62.5rem) {
 @view-transition {
     navigation: auto;
   }
@@ -32,6 +33,7 @@
   ::view-transition-new(root) {
     animation: .3s ease-in both move-in;
   }
+}
   
   
   

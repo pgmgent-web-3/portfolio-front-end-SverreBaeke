@@ -9,12 +9,12 @@ function disableLightMode() {
 };
 
 export function initModeSwitch() {
-  const $modeButton = document.getElementById("mode-button");
+  const $theme = document.getElementById("theme-button");
 
   let lightMode = localStorage.getItem("lightmode");
   lightMode === "active"? enableLightMode(): disableLightMode();
 
-  $modeButton.addEventListener("click", () => {
+  $theme.addEventListener("click", () => {
     lightMode = localStorage.getItem("lightmode");
     lightMode !== "active" ? enableLightMode() : disableLightMode();
   });

@@ -40,3 +40,9 @@
   padding: var(--spacing-xxs);
   margin: 0;
 }
+
+.btn--mode {
+  padding: var(--spacing-xxs);
+  margin: 0;
+  background-color: transparent;
+}

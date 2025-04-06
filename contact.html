@@ -25,7 +25,12 @@
     <div class="grid">
         <nav class="sidebar" aria-label="Sidebar with navigation and social links">
             <header class="sidebar__logo">sb</header>
-            <button class="btn" id="mode-button">test</button>
+            <button class="btn btn--mode" id="theme-button" aria-label="Switch dark/light modes">
+                <svg class="mode-icon" aria-hidden="true">
+                    <use class="moon" href="src/images/svg/sprite.svg#moon"></use>
+                    <use class="sun" href="src/images/svg/sprite.svg#sun"></use>
+                </svg>
+            </button>
             <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
                 aria-label="Toggle navigation menu">
                 <svg class="icon" aria-hidden="true">
