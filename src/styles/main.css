@@ -3,6 +3,7 @@
 @import url('/src/styles/base/_elements.css');
 @import url('/src/styles/base/_typography.css');
 @import url('/src/styles/base/_animations.css');
+@import url('/src/styles/base/_viewtransitions.css');
 @import url('/src/styles/abstracts/_variables.css');
 @import url('/src/styles/abstracts/_utils.css');
 @import url('/src/styles/abstracts/_background.css');

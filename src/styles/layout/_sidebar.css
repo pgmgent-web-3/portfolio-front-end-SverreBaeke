@@ -68,7 +68,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: calc(100svh - 4.75rem);
-    max-height: 37.25rem;
+    max-height: 37rem;
     width: 100%;
     padding: var(--spacing-lg);
     background-color: var(--dark);
